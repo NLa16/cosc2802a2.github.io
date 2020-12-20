@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Learn Git and GitHub (COSC2083 - Assignment 2)</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Start Bootstrap</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="team_profile.html">Team Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tools.html">Tools</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="project_ideas.html">Project Ideas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="feedback.html">Feedback</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="it_technologies.html">IT Technologies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="it_work.html">IT Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="git_and_github.html">Learn Git/GitHub</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('img/about-bg.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>Learn Git and GitHub</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <h2>Overview of Git and GitHub</h2>
+            <p>Git is a free, open source and very commonly used version control system. Git is known to be used to track your source code and many softwares project rely on Git thanks to it version control. It is widely recommended since it allows many to work together using the same files, and it also stores software development history in a reposistory.</p>
+            <p>GitHub is a code hosting platform made by Microsoft for version control and collaboration using Git. GitHub helps developers to store, manage as well as tracking and making changes to their codes. GitHub is also one of the largest coding communities that let you save your codes online and allow developers of a project to see changes one has made, and it is one of the easiest ways to get your projects known.</p>
+        <h2>How to install Git and GitHub</h2>
+            <h3>Windows</h3>
+                <p>1. Go to Git Installer page to download the latest version of Git for Windows.</p>
+                <p>2. Follow the instructions in the Setup Wizard.</p>
+                <p>3. Open the windows command promt (or Git Bash).</p>
+                <p>4. Type 'git version' to verify that Git was installed.</p>
+            <h3>Mac</h3>
+                <p>1. Go to Git Installer page to download the latest version of Git for MacOS.</p>
+                <p>2. Follow the instructions provided.</p>
+                <p>3. Open the command promt 'terminal'.</p>
+                <p>4. Type 'git version' to verify that Git was installed.</p>
+        <h2>Basic Git commands</h2>
+            <p>For beginners and experts alike, Git has some basic but vital commands that are going to stick with the users throughout their time with Git.</p>
+                <ul>
+                    <li>'pull': Used to download content from remote reposistories. Ex.: 'git pull'</li>
+                    <li>'add': This command adds a change in the directory to the staging area. Ex.: 'git add *'</li>
+                    <li>'status': Displays the state of the working directory and staging area. Ex.: 'git status'</li>
+                    <li>'commit': Used to save changes. Ex.: 'git commit -m [commit]'
+                    <li>'push': Opposite to 'pull', 'push' is used to upload content to remote reposistories. Ex.: 'git push'</li>
+                </ul>
+        <h2>How to resolve conflicts</h2>
+            <p>Sometimes developers will try to edit the same content. A conflict may frequently occur when one tries to edit a code that another is editing. The 'git merge' command is created to combine branches and resolve any conflicts.</p>
+            <p>In order to indentify and resolve conflicts:</p>
+                <ul>
+                    <li>Type 'git status' to check the state of the working directory.</li>
+                    <li>The output will show that there are unmerged paths due to a conflict.</li>
+                    <li>A .txt file will also appear to let the user see what was modified.</li>
+                    <li>We will now see some strange new editions like '<<<<<<< HEAD', '=======', '>>>>>>> [new_branch_to_merge_later]'.</li>
+                    <li>Now we edit the conflict in the .txt file by removing all the conflict dividers.</li>
+                    <li>Once edited, use command 'git add merge .txt to stage the new merged content'</li>
+                    <li>Create a new commit using the command 'git commit -m [commit]'.</li>
+                </ul>
+        <h2>Branching</h2>
+            <p>A branch is a way to code a new feature or modification to the software and still not affecting the main part of the project.</p>
+            <p>Creating a branch: start on a default branch or create a new branch.</p>
+                <ul>
+                    <li>Create a new branch based on the current HEAD: 'git branch [new-branch]'</li>
+                    <li>Create a new branch based on an existing branch: 'git branch [new-branch] [base-branch]</li>
+                    <li>Create a new branch from a remote branch: 'git branch --track [new-branch] origin/[base-branch]</li>
+                    <li>Create a new branch from a remote reposistory: 'git push -u origin [local-branch]</li>
+                </ul>
+            <p>Merging a branch: a running branch can merge with any other branch in your Git repository: 'git merge [commit]</p>
+            <p>Deleting a branch: a running branch can be deleted from the reposistory.</p>
+                <ul>
+                    <li>Delete a branch locally: 'git branch -d [branch]'</li>
+                    <li>Delete a branch remotely: 'git push [remote] --delete [branch]'</li>
+                </ul>
+            <p>Checking out a branch: a running branch can pull or checkout to make a clone of it so that the user can work on any of them.</p>
+                <ul>
+                    <li>Create a new branch and switch to it: 'git check out -b'</li>
+                    <li>Switch between branches or checking out a remote branch: 'git checkout'</li>
+                </ul>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+          <p class="copyright text-muted">Copyright &copy; Your Website 2020</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
